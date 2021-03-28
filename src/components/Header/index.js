@@ -7,7 +7,7 @@ import cactus from "../../images/cactus.jpg";
 const Header= () => {
     return ( 
      <Menu secondary pointing>
-         <Image circular src={cactus} width={60}/>
+         <Image circular src={cactus} size={"tiny"} />
         <Menu.Item as= {Link} to="/" style={{fontSize: 22 }}>Mary Papamichalis</Menu.Item>
         <Menu.Item position="right">
             <Button as={Link} to="/home/portfolio" color="teal" basic icon>
