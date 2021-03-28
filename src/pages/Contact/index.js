@@ -10,50 +10,47 @@ const Contact = () => {
         <div>
             <Header />
             <h1>Contact</h1>
-                <Form>
-                    <Form.Group widths='equal'>
-                        <Form.Field
-                            id='form-input-control-first-name'
-                            control={Input}
-                            label='First name'
-                            placeholder='First name'
-                        />
-                        <Form.Field
-                            id='form-input-control-last-name'
-                            control={Input}
-                            label='Last name'
-                            placeholder='Last name'
-                        />
-                    </Form.Group>
+            <Form>
+                <Form.Group widths='equal'>
                     <Form.Field
-                        id='form-textarea-control-opinion'
-                        control={TextArea}
-                        label='Opinion'
-                        placeholder='Opinion'
-                    />
-                    <Form.Field
-                        id='form-input-control-error-email'
+                        id='form-input-control-first-name'
                         control={Input}
-                        label='Email'
+                        label='First name'
+                        placeholder='First name'
                     />
                     <Form.Field
-                        id='form-button-control-public'
-                        control={Button}
-                        content='Confirm'
+                        id='form-input-control-last-name'
+                        control={Input}
+                        label='Last name'
+                        placeholder='Last name'
                     />
-                </Form>
-                <Container>
-                    <List.Item icon='mail'
-                        content={<a href="mailto:mary.papamichalis@gmail.com"> Email</a>} /> 
-                    <List.Item icon='linkedin' 
-                        content={<a href="https://www.linkedin.com/in/mary-papamichalis/">LinkedIn</a>} />
-                    <List.Item icon='github' 
-                        content={<a href="https://github.com/mpapamichalis">Github</a>} />
+                </Form.Group>
+                <Form.Field
+                    id='form-textarea-control-opinion'
+                    control={TextArea}
+                    label='Opinion'
+                    placeholder='Opinion'
+                />
+                <Form.Field
+                    id='form-input-control-error-email'
+                    control={Input}
+                    label='Email'
+                />
+                <Form.Field
+                    id='form-button-control-public'
+                    control={Button}
+                    content='Confirm'
+                />
+            </Form>
+            <Container>
+                <List.Item icon='mail'
+                    content={<a href="mailto:mary.papamichalis@gmail.com"> Email</a>} />
+                <List.Item icon='linkedin'
+                    content={<a href="https://www.linkedin.com/in/mary-papamichalis/">LinkedIn</a>} />
+                <List.Item icon='github'
+                    content={<a href="https://github.com/mpapamichalis">Github</a>} />
             </Container>
 
-            <Link to="/">Back to me</Link>
-            <br />
-            <Link to="/home/portfolio">Back to Portfolio</Link>
 
         </div>
     );
