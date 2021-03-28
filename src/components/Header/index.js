@@ -6,7 +6,7 @@ import cactus from "../../images/cactus.jpg";
 
 const Header= () => {
     return ( 
-     <Menu secondary pointing>
+     <Menu imageAlign='center' secondary pointing>
          <Image circular src={cactus} size={"tiny"} />
         <Menu.Item as= {Link} to="/" style={{fontSize: 22 }}>Mary Papamichalis</Menu.Item>
         <Menu.Item position="right">
